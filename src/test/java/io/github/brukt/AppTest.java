@@ -19,9 +19,4 @@ public class AppTest
         assertTrue( true );
     }
 
-    @Test
-    public void greetTest() {
-        App app = new App();
-        assertEquals("Hi", app.greet());
-    }
 }
