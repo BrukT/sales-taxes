@@ -2,24 +2,27 @@
 
 This repository contains a maven project which is aimed solve the [sales taxes problem](https://github.com/xpeppers/sales-taxes-problem/blob/master/README.md). 
 
+To run this project on your machine you need to install `Apache Maven 3.6.3` and `java 11`.
+
 To use this application, first clone the repository to your local machine. 
-Then from inside the sales taxes folder run the following command to ge the jar file.
+Then switch into the `sales-taxes` directory and then issue the maven package command to get the jar file. Both are shown below.
 
 ```bash
+cd sales-taxes
 mvn package
 ```
 
-to execute the tests run the following command 
+To run the tests without building the jar issue the following command instead of `mvn package`.
 ```bash
 mvn test
 ```
 
-to use the application run the following command
+To use the application run the following command:
 ```bash
 java -cp target/sales-taxes-1.0-SNAPSHOT.jar io.github.brukt.App
 ```
 
-in the command prompt enter the file names where the input is saved and where you want to save the output text as shown below
+In the command prompt enter the file names where the input is saved and where you want to save the output text as shown below.
 ```
 bruk@bruk-pc:sales-taxes$java -cp target/sales-taxes-1.0-SNAPSHOT.jar io.github.brukt.App
 Enter the input file path
